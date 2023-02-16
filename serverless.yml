@@ -45,6 +45,12 @@ functions:
       - httpApi:
           path: /{name}
           method: put
+  deleteCompany:
+    handler: src/handlers/deleteCompany.main
+    events:
+      - httpApi:
+          path: /{name}
+          method: delete
 resources:
   Resources:
     ErpTable:
